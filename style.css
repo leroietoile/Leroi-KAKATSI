@@ -46,6 +46,7 @@ h1{
     color: white;
     margin: 50px 0 0 0;
     font-size: 50px;
+    padding-top: 20px;
 }
 
 div.short_line{
@@ -150,12 +151,12 @@ nav li a:hover{
 
 
 
-div.intro{
-    
+div.intro{   
     background: url(triangle2.svg) no-repeat center bottom/100%;
     margin-top: 0;
     padding: 10px 20px 100px 20px;
     text-align: center;
+    margin-bottom: -1px;
 }
 
 div.intro p{
@@ -267,7 +268,26 @@ div.bouton_cv a:hover{
 section.portfolio{
     background: url(triangle1.svg) no-repeat center top/100%;
     padding-top: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 0;
+}
+
+section.portfolio h2{
+    margin-bottom: 0;
+}
+
+div.portf_category{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+div.portf_category h3.portf_category_title{
+    display: inline-block;
+    color: var(--clr4);
+    border-bottom: solid 2px var(--clr4);
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
 }
 
 div.layout_set{
@@ -290,6 +310,7 @@ div.portf_layout:hover{
 }
 
 div.portf_layout h3{
+    font-size: 18px;
     color: var(--clr1);
     text-align: center;
 }
@@ -299,18 +320,20 @@ div.portf_layout div.img{
 }
 
 div.portf_layout div#portf1{
-    background: url(portf1.jpg) no-repeat center/cover;
+    background: url(pic2.jpg) no-repeat center/cover;
 }
 
 div.portf_layout div#portf2{
-    background: url(portf2.jpg) no-repeat center/cover;
+    background: url(pic3.jpg) no-repeat center/cover;
 }
 
 div.portf_layout div#portf3{
-    background: url(portf3.jpg) no-repeat center/cover;
+    background: url(pic1.jpg) no-repeat center/cover;
 }
 
 div.portf_layout div.describ_text{
+    font-size: 16px;
+    text-align: left;
     padding: 30px 40px;
 }
 
@@ -323,7 +346,7 @@ div.next_arrow_container img.next_arrow{
     width: 50px;
     position: relative;
     top: 45%;
-    left: 25%;
+    left: 0;
     transform: rotate(90deg);
 }
 
@@ -338,10 +361,10 @@ section.quote{
 }
 
 @keyframes fondu{
-    0%{background-image: url("quote1.png");}
-    34%{background-image: url("quote2.png");}
+    0%{background-image: url("quote4.jpg");}
+    34%{background-image: url("quote5.jpg");}
     66%{background-image: url("quote3.png");}
-    100%{background-image: url("quote1.png");}
+    100%{background-image: url("quote4.jpg");}
 }
 
 section.quote div.img_container{
@@ -708,11 +731,20 @@ section.topic_portf p{
         padding-bottom: 20px;
     }
 
+    div.portf_category h3.portf_category_title{
+        font-size: 17px;
+    }
+
+    div.portf_layout h3{
+        font-size: 16px;
+    }
+
     div.portf_layout div.img{
         width: 100%;
     }
 
     div.portf_layout div.describ_text{
+        font-size: 15px;
         padding: 10px 20px;
     }
 
@@ -722,7 +754,6 @@ section.topic_portf p{
     
     div.next_arrow_container img.next_arrow{
         width: 30px;
-        left: 15%;
     }
 
 
